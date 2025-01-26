@@ -3,27 +3,8 @@ import BookingForm from "../ui/BookingForm";
 export default function Home() {
   return (
     <div className="bg-gray-100 text-gray-900">
-      {/* Hero Section */}
-      <section className="py-10 px-6">
-        <h2 className="text-3xl font-semibold text-center mb-6">
-          Why Choose Us?
-        </h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
-          {[
-            "Professional and Experienced Team",
-            "Free Estimates",
-            "Personalized Services",
-            "Competitive Pricing",
-          ].map((reason, index) => (
-            <div
-              className="bg-white shadow-md rounded-2xl p-4 text-center"
-              key={index}
-            >
-              <h3 className="text-xl font-semibold">{reason}</h3>
-            </div>
-          ))}
-        </div>
-      </section>
+
+    
 
       {/* Our Services */}
       <section className="py-10 px-6 bg-gray-50">
