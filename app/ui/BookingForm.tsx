@@ -1,13 +1,20 @@
+"use client"
 import { TextField, Button } from "@mui/material";
 
 export default function BookingForm() {
+    const handleSubmit = () =>{
+        console.log('sss')
+    }
     return(
 <section className="py-10 px-6">
-  <h2 className="text-3xl font-semibold text-center mb-6">Schedule an Appointment</h2>
+  <h2 className="text-3xl font-semibold text-center mb-6">Schedule a Call</h2>
   <form
+    onSubmit={handleSubmit}
     className="max-w-lg mx-auto bg-white shadow-md rounded-2xl p-6 space-y-4"
-    noValidate
   >
+    <legend>
+    Please provide your contact information and a description of your project and we'll contact you as soon as possible to schedule a free estimate
+    </legend>
     <TextField
       id="name"
       name="name"
@@ -38,32 +45,6 @@ export default function BookingForm() {
       margin="normal"
     />
     <TextField
-      id="preferredDate"
-      name="preferredDate"
-      label="Preferred Date"
-      type="date"
-      slotProps={{
-        inputLabel: { shrink: true },
-      }}
-      variant="outlined"
-      fullWidth
-      required
-      margin="normal"
-    />
-    <TextField
-      id="preferredTime"
-      name="preferredTime"
-      label="Preferred Time"
-      type="time"
-      slotProps={{
-        inputLabel: { shrink: true },
-      }}
-      variant="outlined"
-      fullWidth
-      required
-      margin="normal"
-    />
-    <TextField
       id="projectDescription"
       name="projectDescription"
       label="Project Description"
@@ -81,10 +62,9 @@ export default function BookingForm() {
       variant="outlined"
       sx={{ padding: "12px 0", textTransform: "none", fontSize: "16px" }}
     >
-      Book Appointment
+      Schedule a Call
     </Button>
   </form>
 </section>
-
     );
 }
