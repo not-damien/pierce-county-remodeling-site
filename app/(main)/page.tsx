@@ -1,5 +1,5 @@
 import Link from "next/link";
-import BookingForm from "./ui/BookingForm";
+import BookingForm from "../ui/BookingForm";
 export default function Home() {
   return (
     <div className="bg-gray-100 text-gray-900">

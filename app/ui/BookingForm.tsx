@@ -1,9 +1,15 @@
 "use client"
 import { TextField, Button } from "@mui/material";
+import { FormEvent } from "react";
 
 export default function BookingForm() {
-    const handleSubmit = () =>{
-        console.log('sss')
+    const handleSubmit = (event: FormEvent<HTMLFormElement>) =>{
+      event.preventDefault();
+      const formData = new FormData(event.currentTarget);
+        console.log(formData.get('name'))
+        console.log(formData.get('email'))
+        console.log(formData.get('phone'))
+        console.log(formData.get('projectDescription'))
     }
     return(
 <section className="py-10 px-6">

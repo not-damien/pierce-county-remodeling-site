@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import "./globals.css";
-import Header from "./ui/Header";
-import Footer from "./ui/Footer";
+import "../globals.css";
+import Header from "../ui/Header";
+import Footer from "../ui/Footer";
 export const metadata: Metadata = {
   title: "Pierce County Remodeling",
   description:
