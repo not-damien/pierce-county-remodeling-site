@@ -36,33 +36,39 @@ export default function Home() {
               title: "Kitchen Remodeling",
               description:
                 "Custom cabinetry, countertops, backsplashes, and appliance installation.",
+              href:'/kitchen-remodeling'
             },
             {
               title: "Bathroom Remodeling",
               description:
                 "Shower and tub installation, vanity upgrades, and tile flooring.",
-            },
+              href:'/bathroom-remodeling'
+              },
             {
               title: "Home Additions",
               description:
                 "Room extensions, garage conversions, and second-story additions.",
+              href:'home-additions'
             },
             {
               title: "Flooring Installation",
               description: "Hardwood, laminate, and tile flooring.",
+              href:'flooring'
             },
             {
               title: "Painting and Drywall",
               description:
                 "Interior and exterior painting, drywall repair, and installation.",
+              href:'painting-drywall'
             },
             {
               title: "Outdoor Living Spaces",
+              href:'outdoor',
               description: "Decks, patios, outdoor kitchens, and landscaping.",
             },
           ].map((service, index) => (
             <Link
-              href={'/kitchen-remodeling'}
+              href={service.href}
               className="bg-white shadow-md rounded-2xl p-4 text-center hover:bg-gray-200"
               key={index}
             >

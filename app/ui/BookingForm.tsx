@@ -13,7 +13,7 @@ export default function BookingForm() {
     }
     return(
 <section className="py-10 px-6">
-  <h2 className="text-3xl font-semibold text-center mb-6">Schedule a Call</h2>
+  <h2 className="text-3xl font-semibold text-center mb-6">Request a Call</h2>
   <form
     onSubmit={handleSubmit}
     className="max-w-lg mx-auto bg-white shadow-md rounded-2xl p-6 space-y-4"
