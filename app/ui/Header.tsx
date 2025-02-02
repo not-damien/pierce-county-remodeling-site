@@ -1,16 +1,17 @@
 import Link from "next/link";
+import OurServices from "./OurServices";
 
 export default function Header(){
     return(
         <header className="bg-[#a7bbc2] text-white text-center py-12 px-6 shadow-lg bg-[url(/stock/house2.jpg)]  bg-cover bg-bottom h-screen bg-no-repeat">
-       
-        <h1 className="text-5xl font-bold leading-tight">
+       <div className="bg-blue-400 p-8 rounded">
+        <h1 className="text-5xl font-bold leading-tight ">
           Welcome to Pierce County Remodeling!
         </h1>
-        <p className="text-2xl font-light italic mb-6">
+        <p className="text-2xl font-light italic">
           Transforming your home, one project at a time.
-        </p>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 ">
+        </p></div>
+        {/* <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 ">
           {[
             "Professional and Experienced Team",
             "Free Estimates",
@@ -25,7 +26,8 @@ export default function Header(){
               <h3 className="text-xl font-semibold">{reason}</h3>
             </Link>
           ))}
-        </div>
+        </div> */}
+        <OurServices/>
         <p className="mt-6 text-lg md:text-xl text-gray-200 leading-relaxed">
           Whether you're looking to update your kitchen, remodel your bathroom,
           or give your entire home a facelift, we're here to help. Our
